@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e7d526b1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul>
+                    <button type="FIRST" class="btn3 btn4">
+                    <li><a href="#">HOME</a></li>
+                    </button>
+                    <button type="FIRST" class="btn3 btn4">
+                        <li><a href="#">ABOUT</a></li>
+                    </button>
+                    <button type="FIRST" class="btn3 btn4">
+                        <li><a href="#">CONTACT</a></li>
+                    </button>
+                </ul>
+            </nav>
+            <div class="header-text">
+                    
+                <H1> <span><B>SPOOFING DETECTOR</B></span><br></H1>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <textarea name="Message" rows="2" placeholder="Paste URL here"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                    <div class="about-col-1">
+                        <img src="IMAGES/pp2.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <H1 class="sub-title">ABOUT THE WEBSITE</H1>
+                        <p>This website helps to detect a URL is faulty or not maintaining high security.
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('HOW TO USE')">HOW TO USE</p>
+                        <p class="tab-links" onclick="opentab('ABOUT US')">ABOUT US</p>
+                        <p class="tab-links" onclick="opentab('GOALS')">GOALS</p>
+                        
+
+                       </div>
+                       <div class="tab-contents active-tab" id="HOW TO USE">
+                        <ul>
+                            <li><span>THIS IS VERY EASY TO USE.  </span></li>
+                            <li><span>PASTE YOUR URL IN THE GIVEN BOX.</span></li>
+                            <li><span>CLICK ON SUBMIT BUTTON </span></li>
+                            <li><span>RESULT WILL COME AUTOMATICALLY</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="ABOUT US">
+                        <ul>
+                            
+                                <li><span>WE ARE STUDENTS OF ACADEMY OF TECHNOLOGY.WE HAVE BUILT THIS WEBSITE AS OUR FINAL YEAR PROJECT WITH THE GUIDENCE OF OUR PROJECT MENTOR <b>DR. K BHOWAL</b> SIR</span></li>
+                                <br>
+                            
+                                <li><span><b>DEVELOPERS:</b></span></li>
+                                <li><span>ANUBHAB CHATTOPADHYAY</span></li>
+                                <li><span>BIDIPTA DAS</span></li>
+                                <li><span>ANKITA MUKJERJEE</span></li>
+                                <li><span>MONIDIPA GHOSHAL</span></li>
+                                <li><span>ANWESHA SAHOO</span></li>
+                                
+
+
+
+
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="GOALS">
+                        <ul>
+                            <li><span>SPOOFING, AS IT PERTAINS TO CYBERSECURITY, IS WHEN SOMEONE OR SOMETHING PRETENDS TO BE SOMETHING ELSE IN AN ATTEMPT TO GAIN OUR CONFIDENCE, USES ANOTHER’SIDENTITY,GETACCESS TO OUR SYSTEMS, STEAL DATA, STEAL MONEY ETC.</span></li>
+                                
+                            <li><span>THAT'S WHY WE DESIGNED THIS WEBSITE TO PREVENT CYBER CRIME.</span></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!------------services----------------->
+    <div id="services">
+        <div class="container">
+            <H1 class="sub-title">OUR SERVICES</H1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-check-to-slot"></i>
+                    <h2>EASY USE</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h2>SECURE</h2>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-bullseye"></i>
+                    <h2>MAXIMUM</h2>
+                    <h2>ACCURACY</h2>
+                 
+                </div>
+            </div>
+        </div>
+    <!------------portfolio----------------->
+    <!----------contact-------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><i class="fa-sharp fa-solid fa-paper-plane"></i>Contact US</h1>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name"  placeholder="Your Name" required>
+                        <input type="email" name="email"  placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        
+                    </form>
+                </div>
+              
+            </div>
+        </div>
+        <div class="copyright"></div>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp chattopadhyayanubhab@gmail.com &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp dasbidipta110@gmail.com &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ankitamukherjee.cgr@gmail.com &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ghoshalmoniofficial89@gmail.com &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  anwesha.sahoo.16.01.2002@gmail.com</p>
+    </div>
+    
+   <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+    
+</body>
+</html>
